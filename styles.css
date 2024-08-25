@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    page-break-inside: avoid;
+}
+
+.header h2, .header h3 {
+    text-align: center;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    page-break-inside: avoid;
+}
+
+legend {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 8px;
+    page-break-inside: avoid;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 12px;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row .form-group {
+    flex: 1;
+    min-width: 180px;
+    margin-right: 8px;
+}
+
+.row .form-group:last-child {
+    margin-right: 0;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-container {
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    fieldset {
+        margin-bottom: 8px;
+        padding: 8px;
+    }
+
+    .form-group {
+        margin-bottom: 6px;
+    }
+
+    input, textarea {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    button {
+        display: none;
+    }
+}
